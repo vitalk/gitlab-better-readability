@@ -52,6 +52,9 @@ body {
 ul.notes .note .note-body .note-text p {
     /* Ensure the text of notes has enough contrast to be readable. */
     color: #333 !important;
+
+    /* A little bit reduce the text size for notes. */
+    font-size: .9375em;
 }
 
 
