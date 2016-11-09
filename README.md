@@ -15,7 +15,7 @@ This user stylesheet improves the readability of GitLab web UI, viz.,
 
 ## Installation
 
-The Stylish extension is available for most popular browsers, e.g. [Firefox](https://addons.mozilla.org/en-US/firefox/addon/stylish/)
+The `Stylish` extension is available for most popular browsers, e.g. [Firefox](https://addons.mozilla.org/en-US/firefox/addon/stylish/)
 and [Chrome](https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe).
 Use any preferred method.
 
