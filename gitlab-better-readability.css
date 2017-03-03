@@ -1,19 +1,28 @@
+:root {
+    --body-color: #24292e;
+    --link-color: #0366d6;
+    --code-color: var(--body-color);
+    --code-background-color: #f6f8fa;
+}
+
+
 body {
+    /* Use system fonts when possible and fallback to defaults othervise. */
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 
-.wiki ul, .wiki ol {
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
+code,
+.code.white {
+    background-color: var(--code-background-color);
+    border-color: var(--code-background-color);
+    color: var(--code-color);
 }
 
 
 .code.white {
+    /* Add padding to code snippets for better readability */
     padding: 1em;
-    background-color: #f6f8fa;
-    border-color: #f6f8fa;
-    color: #24292e;
 }
 
 
@@ -23,10 +32,23 @@ body {
 }
 
 
+.wiki ul, .wiki ol {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+
 .wiki code {
+    font-size: 85%;
+
     background-color: rgba(27,31,35,0.05);
-    color: #24292e;
-    font-size: 95%;
+    color: var(--code-color);
+}
+
+
+.wiki pre {
+    font-size: 90%;
+    line-height: 1.4;
 }
 
 
@@ -34,17 +56,23 @@ body {
     margin-bottom: 1em !important;
     font-size: 16px !important;
     line-height: 1.5 !important;
-    color: #333 !important;
+    color: var(--body-color);
 }
 
 
-.wiki a {
+a,
+a:hover,
+.wiki a,
+.wiki a:hover,
+.discussion-headline-light a,
+.discussion-headline-light a:hover {
     /* Use more contast color for links */
-    color: #0366d6;
+    color: var(--link-color);
 }
 
 
 .task-list-item {
+    /* Remove left margin from task items */
     margin-left: 1em !important;
 
     /* Space out list items for better readability */
@@ -80,6 +108,14 @@ ul.notes .system-note {
 }
 
 
+.note-headline-light, .discussion-headline-light {
+    color: rgba(0,0,0,0.85);
+
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+
 .timeline .timeline-entry {
     /* Adjust padding for timeline entry to ensure is properly aligned
      * vertically. */
@@ -89,5 +125,6 @@ ul.notes .system-note {
 
 
 .issuable-details .title {
+    /* Add margin between issue/mr title and description. */
     margin-bottom: 1em;
 }
