@@ -9,9 +9,24 @@ body {
 }
 
 
+.code.white {
+    padding: 1em;
+    background-color: #f6f8fa;
+    border-color: #f6f8fa;
+    color: #24292e;
+}
+
+
+.code.white code {
+    /* Ensure the nested code tag inherits the background-color of their parent */
+    background-color: inherit;
+}
+
+
 .wiki code {
-    background-color: #f7f7f7 !important;
-    color: #333 !important;
+    background-color: rgba(27,31,35,0.05);
+    color: #24292e;
+    font-size: 95%;
 }
 
 
@@ -23,23 +38,23 @@ body {
 }
 
 
+.wiki a {
+    /* Use more contast color for links */
+    color: #0366d6;
+}
+
+
 .task-list-item {
     margin-left: 1em !important;
+
+    /* Space out list items for better readability */
+    margin-bottom: 1em;
 }
 
 
 .task-list-item-checkbox {
     margin: 0 .2em .25em -.8em !important;
     font-size: 2em !important;
-}
-
-
-.highlight {
-    padding: .625em 1.25em !important;
-    border-radius: .2em !important;
-    border: none !important;
-    background-color: #f7f7f7 !important;
-    font-size: .85em !important;
 }
 
 
@@ -63,4 +78,9 @@ ul.notes .note .note-body .note-text p {
      * vertically. */
     padding-top: 1em !important;
     padding-bottom: 1em !important;
+}
+
+
+.issuable-details .title {
+    margin-bottom: 1em;
 }
