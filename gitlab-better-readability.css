@@ -73,6 +73,13 @@ ul.notes .note .note-body .note-text p {
 }
 
 
+ul.notes .system-note {
+    /* Remove extra padding from system notes */
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+
 .timeline .timeline-entry {
     /* Adjust padding for timeline entry to ensure is properly aligned
      * vertically. */
